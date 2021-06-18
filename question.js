@@ -90,11 +90,11 @@ function showScores() {
 
 // create questions here
 var questions = [
-    new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
-    new Question("Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
-    new Question("Which is not a JavaScript Framework?", ["Python Script", "JQuery","Django", "NodeJS"], "Django"),
-    new Question("Which is used for Connect To Database?", ["PHP", "HTML", "JS", "All"], "PHP"),
-    new Question("Webdevtrick.com is about..", ["Web Design", "Graphic Design", "SEO & Development", "All"], "All")
+    new Question("What did i think about you when i first saw you?", ["Friend", "love", "Bf/Gf", "Just a person"], "love"),
+    new Question("Which food do i like the most?", ["Momos", "Burger","Ice-cream", "Chocolate"], "Momos"),
+    new Question("What's the cutest thing about you i like the most?", ["Smile", "Laugh", "Hairs", "Eyes"], "Laugh"),
+    new Question("Which pet i like the most?", ["Cat", "Birds", "Fish", "Dog"], "Dog")
+    new Question("What would my reaction if you'll kiss me?", ["Slap you", "Kiss you back","Became shy", "Stop talking"], "Became shy"),
 ];
 // create quiz
 var quiz = new Quiz(questions);
