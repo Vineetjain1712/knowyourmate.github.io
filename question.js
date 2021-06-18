@@ -93,7 +93,7 @@ var questions = [
     new Question("What did i think about you when i first saw you?", ["Friend", "love", "Bf/Gf", "Just a person"], "love"),
     new Question("Which food do i like the most?", ["Momos", "Burger","Ice-cream", "Chocolate"], "Momos"),
     new Question("What's the cutest thing about you i like the most?", ["Smile", "Laugh", "Hairs", "Eyes"], "Laugh"),
-    new Question("Which pet i like the most?", ["Cat", "Birds", "Fish", "Dog"], "Dog")
+    new Question("Which pet i like the most?", ["Cat", "Birds", "Fish", "Dog"], "Dog"),
     new Question("What would my reaction if you'll kiss me?", ["Slap you", "Kiss you back","Became shy", "Stop talking"], "Became shy"),
 ];
 // create quiz
