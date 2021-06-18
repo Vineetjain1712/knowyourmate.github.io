@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfer data</title>
+</head>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0%;
+
+    }
+    #words{
+        font-size: 22px;
+        font-family:cursive;
+        padding:0px 10px;
+        margin: 10px;
+    }
+    #form{
+        background-color: rgba(204, 150, 12, 0.89);
+        padding: 100px 1px 100px 1px;
+        margin: 200px 0px 0px 0px ;
+        border-radius: 10px;
+        box-shadow: 4px 4px rgb(163, 44, 187);
+    }
+    #text{
+        margin: 10px;
+        padding: 6px 10px;
+        width: 200px;
+        border-radius: 4px;
+        box-shadow: 3px 3px coral;
+        border: 1px solid rgb(36, 0, 43);
+        background-color: rgb(207, 186, 186);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #submit{
+        margin: 10px;
+        padding: 10px;
+        color:black;
+        font-size:18px;
+        font-weight: bold;
+        border-radius: 6px;
+        background-color: cornflowerblue;
+        box-shadow: 3px 3px coral;
+        cursor: pointer;
+    }
+    #table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <form id="form" action="page1.html" method="get">
+        <table id="table">
+            <tr>
+                <td id="words">Enter your name here : </td>
+            </tr>
+            <tr>
+                <td ><input id="text" type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td ><input id="submit" type="submit" value="Genrate quiz link"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

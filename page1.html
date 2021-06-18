@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0%;
+}
+body{
+    position: relative; 
+    background-color: rgba(0, 0, 0, 0.65);
+
+}
+
+body::before {    
+      content: "";
+      background-image: url(page1bg.jpg);
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      top: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 790px;
+      z-index: -1;
+      opacity: 0.6;
+}
+.hero{
+    color: white ;
+    font-weight: bold;
+    padding: 160px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Vibur", cursive;
+    color: #0abaff;
+    text-shadow:2.4px 2.4px rgba(0, 253, 135, 0.92);
+    font-size: 20px;
+;
+}
+#start{
+    background-color:rgb(0,0,0);
+    background-image:url(http://www.zingerbugimages.com/backgrounds/multi_colored_stars.gif);
+    background-repeat:repeat;
+
+}
+#discription{
+    color: rgb(255, 219, 241);
+    margin-top: 10px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0.6px 0.6px rgb(255, 0, 191);
+}
+#start{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 30px 80px 0px 80px;
+}
+#start>a{
+    /* border: 4px solid rgb(16, 129, 12); */
+    /* border-radius: 30px; */
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(235, 2, 204);
+    padding: 10px 40px;
+    /* background-color: rgba(255, 187, 0, 0.89);
+    box-shadow:2px 2px tomato; */
+    text-decoration-line: none;
+}
+#name{
+    margin: 60px 20px 0px 50px;
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+}
+#link{
+    text-decoration: none;
+    font-size: 24px;
+    color: blanchedalmond;
+    background-color: rgb(121, 9, 226);
+    border: 2px solid lawngreen;
+    border-radius: 6px;
+    margin: 10px 300px;
+    /* display: flex; */
+    /* margin: 0px auto; */
+}
+#link{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 30px 80px 0px 80px;
+}
+
+</style>
+
+<body>
+    <div class="hero">
+        <h1>Know your Mate</h1>
+    </div>
+    <div id="discription">
+        It's time to see how much you Know your He/She.
+    </div>
+    <div id="name">
+        the Bond between You and <span id="resultname">" "</span>
+    </div>
+    <div id="start">
+        <a href="index.html"> let's start </a>
+    </div>
+    <div ><a id="link" href="create_quiz.html">Create your quiz</a></div>
+
+    <script>
+        window.addEventListener('load', () => {
+            let x = (new URL(document.location)).searchParams;
+            const name = x.get('name');
+            document.getElementById('resultname').innerHTML = name;
+        })
+    </script>
+
+
+</body>
+</html>

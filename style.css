@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+
+
+.phone-app-demo {
+  height: 61.8rem;
+  background: url("./images/mobile-app.png") center no-repeat;
+  flex: 1;
+}
+
+
+.logo img {
+  width: 17.5rem;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.logo{
+  margin: 30px auto 35px 0px;
+  /* padding-right: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 22px;
+  width: 250px;
+  background-color: #3897f0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: .4rem;
+  cursor: pointer;
+  padding: 15px 0px;
+}
+
+.has-separator {
+  font-size: 1.2rem;
+  color: #999999;
+  text-transform: uppercase;
+  position:relative;
+  top:13px;
+  right: 100px;
+  /* margin-bottom: 2.5rem; */
+}
+.orarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line1{
+    margin-top: 30px;
+    background-color: rgba(153, 153, 153, 0.801);
+    height: 1px;
+    width: 100px;
+    position: relative;
+    top: 0px;
+    right: 15px;
+}
+.line2{
+    background-color: rgba(153, 153, 153, 0.815);
+    height: 1px;
+    width: 100px;
+    position: relative;
+    left: 30px;
+    top: 14.5px;
+}
+
+
+.facebook-login {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: #3897f0;
+  padding: 8px 35px;
+  border-radius: 4px; 
+  /* overflow: auto; */
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 260px;
+
+}
+
+.facebook-login i {
+  font-size: 1.7rem;
+  margin-right: .7rem;
+}
+
+.password-reset {
+  font-size: 1.2rem;
+  color: #3897f0;
+  display: flex;
+  justify-content: center;
+  padding-left: 140px;
+  margin: 20px 0px;
+  font-size: 14px;
+  /* margin: 0px 0px 10px 150px; */
+}
+
+.sign-up {
+  text-align:center;
+  font-size: 1.4rem;
+  color: #262626;
+  background-color: rgba(248, 248, 248, 0.616);
+  border: 1px solid rgba(238, 238, 238, 0.575);
+  margin-top: 30px;
+  /* width: 300px; */
+  padding: 0px;
+}
+
+.sign-up a {
+    margin: 0px;
+  color: #3897f0;
+  font-weight: bold;
+}
+
+.get-the-app {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.get-the-app span {
+  display: block;
+  margin: 2rem 0;
+  color: #262626;
+}
+
+.badges {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.badges img {
+  max-width: 12rem;
+  cursor: pointer;
+}
+
+.badges img:first-child {
+  margin-right: 1rem;
+}
+
+
+
+.copyright-notice {
+  color: #494949;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+  .phone-app-demo {
+    display: none;
+  }
+
+   .wrapper > .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    padding-top: 0;
+  }
+
+
+  .sign-up {
+    color: rgb(138, 136, 136);
+    border: none;
+    margin: 1.7rem 0;
+    font-size: 1.2rem;
+  }
+
+
+}
+.details{
+    /* border-radius: 10px; */
+    margin: 30px 0px 10px 0px;
+
+}
+.insiders{
+    border-radius: 4px;
+    border: 1px solid rgb(206, 206, 206);
+    margin: auto;
+    margin-top: 10px;
+    padding: 4px;
+    height: 30px;
+    width: 250px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insiders::placeholder{
+    color:rgb(156, 155, 155) ;
+
+}
+#from{
+    text-transform: lowercase;
+    /* margin-left: 0px; */
+}
+.lang{
+    text-align: center;
+    font-size: 12px;
+    color: rgb(73, 73, 73);
+    margin: 15px 0px;
+}
+.footer-nav{
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    bottom: 0;
+
+}
+.footer-nav li{
+    display: inline-block;
+    padding: 10px 15px;
+    list-style:none;
+    /* background-color: rgba(214, 214, 214, 0.829); */
+}
+.footer-nav ul{
+    background-color: rgba(224, 223, 223, 0.863);
+    margin-top: 40px;
+    
+
+}
+.footer-nav a{
+    color: rgb(39, 39, 39);
+}
+.mobileapp{
+  position: absolute;
+  /* float: left; */
+  left: 5%;
+  top: 60px;
+  width: 434px;
+  height: 600px;
+}
+@media (max-width:1100px){
+  .mobileapp{
+    display: none;
+  }
+}
