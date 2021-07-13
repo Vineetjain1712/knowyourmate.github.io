@@ -112,20 +112,14 @@ body::before {
         It's time to see how much you Know your He/She.
     </div>
     <div id="name">
-        the Bond between You and <span id="resultname">" "</span>
+        the Bond between You and <span id="resultname">them</span>
     </div>
     <div id="start">
         <a href="index.html"> let's start </a>
     </div>
     <div ><a id="link" href="create_quiz.html">Create your quiz</a></div>
 
-    <script>
-        window.addEventListener('load', () => {
-            let x = (new URL(document.location)).searchParams;
-            const name = x.get('name');
-            document.getElementById('resultname').innerHTML = name;
-        })
-    </script>
+    
 
 
 </body>
